@@ -1,0 +1,34 @@
+{
+  "ng42.barrels.eol": "\n",
+  "ng42.barrels.fileTemplate": ["export * from \"./$asset_name.js\";"],
+  "ng42.barrels.directoryTemplate": [
+    "export * from \"./$asset_name/index.js\";"
+  ],
+  "ng42.barrels.include": {
+    "*.tsx": true, // Add this line to include "*.tsx" files
+    "*.jsx": true,
+    "*.ts": true,
+    "*.js": true
+  },
+  "autoBarrel.disableRecursiveBarrelling": true,
+  "autoBarrel.includeExtensionOnExport": "",
+  "autoBarrel.quoteStyle": "Double",
+  "autoBarrel.watchGlob": "src/**/*.{js,jsx,ts,tsx,vue}",
+  "cSpell.words": [
+    "commitlint",
+    "consts",
+    "conventionalcommits",
+    "deburr",
+    "hookform",
+    "mantine",
+    "oidc",
+    "rediss",
+    "signin",
+    "sonarjs",
+    "subdirs",
+    "tabler",
+    "tsdoc",
+    "urlcat",
+    "zustand"
+  ]
+}

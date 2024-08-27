@@ -1,0 +1,35 @@
+{
+  "name": "@core-config/release",
+  "main": ".dist/index.js",
+  "version": "0.0.0",
+  "private": false,
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "release:semantic": "semantic-release",
+    "release": "pnpm i && pnpm build && npm version patch && npm publish",
+    "build": "pnpm run copy:js",
+    "copy:js": "copyfiles -u 1 src/**/*.js dist"
+  },
+  "workspaces": [
+    "@core-api/*",
+    "@core-ui/*",
+    "@core-utils/*",
+    "@core-sdk/*",
+    "@core-config/*"
+  ],
+  "dependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^11.1.0",
+    "@semantic-release/git": "^10.0.0",
+    "@semantic-release/gitlab": "^13.0.3",
+    "@semantic-release/npm": "^11.0.3",
+    "@semantic-release/release-notes-generator": "^12.1.0"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "semantic-release": "^23.0.2"
+  }
+}

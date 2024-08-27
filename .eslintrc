@@ -1,0 +1,10 @@
+{
+  "parserOptions": {
+    "project": [
+      "./client/*/*/tsconfig.json",
+      "./server/*/*/tsconfig.json",
+      "./shared/*/tsconfig.json"
+    ],
+    "ignorePatterns": ["docs"]
+  }
+}

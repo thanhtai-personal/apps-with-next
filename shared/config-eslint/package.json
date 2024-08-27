@@ -1,0 +1,27 @@
+{
+  "name": "@core-config/eslint-plugin",
+  "version": "0.0.0",
+  "private": false,
+  "scripts": {
+    "build": "pnpm run copy:js",
+    "release": "pnpm i && pnpm build && npm version patch && npm publish",
+    "copy:js": "copyfiles -u 1 src/**/*.js dist"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "@core-config/release": "workspace:^",
+    "@typescript-eslint/eslint-plugin": "^6.11.0",
+    "@typescript-eslint/parser": "^6.11.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-only-warn": "^1.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-sonarjs": "^0.24.0",
+    "eslint-plugin-tsdoc": "^0.2.17",
+    "semantic-release": "^23.0.2",
+    "typescript": "^5.2.2",
+    "typescript-eslint": "^7.1.1"
+  }
+}

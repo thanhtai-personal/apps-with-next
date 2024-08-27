@@ -1,0 +1,22 @@
+{
+  "name": "@core-config/typedoc",
+  "main": "./dist/base.json",
+  "version": "0.0.0",
+  "private": false,
+  "type": "module",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "pnpm run copy:json",
+    "copy:json": "copyfiles -u 1 src/**/*.json dist",
+    "docs": "echo >>mising docs",
+    "release": "pnpm i && pnpm build && npm version patch && npm publish"
+  },
+  "devDependencies": {
+    "@core-config/release": "workspace:^",
+    "copyfiles": "^2.4.1",
+    "semantic-release": "^23.0.2"
+  }
+}

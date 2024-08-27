@@ -1,0 +1,46 @@
+.tap-wrapper {
+  width: 100%;
+  min-height: 100svh;
+  background-size: 100% 100%;
+}
+.info-point {
+  &.small {
+    width: 80px;
+  }
+  &.normal {
+    width: 140px;
+  }
+  &.big {
+    width: 230px;
+  }
+}
+.fly-point {
+  animation: go_up_element 1.3s ease-in-out forwards;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  height: fit-content;
+}
+.action-logo {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  img {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }
+}
+
+@keyframes go_up_element {
+  0% {
+    opacity: 0.2;
+  }
+  10% {
+    opacity: 100;
+  }
+  100% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "entryPoints": ["apps/**", "client/**", "shared/**"],
+  "name": "TTT Core project",
+  "entryPointStrategy": "packages",
+  "includeVersion": false,
+  "out": "./public/docs"
+}

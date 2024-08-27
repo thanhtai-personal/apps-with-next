@@ -1,0 +1,29 @@
+.ton-connection-btn {
+  background: transparent;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100svh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.ton-connection-btn .app-bg {
+  width: 100vw;
+  height: 100svh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.ton-connection-btn .content {
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

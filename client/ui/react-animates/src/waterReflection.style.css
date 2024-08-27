@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html,
+body {
+  overscroll-behavior-x: none;
+  overscroll-behavior-y: none;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Asap", sans-serif;
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  text-align: center;
+  overflow-x: hidden;
+  background: white;
+  color: white;
+}
+
+:root {
+  --ratio: 0;
+  --gap: 5px;
+  --filter: brightness(0.75) hue-rotate(20deg);
+}
+#bg,
+#base,
+#reflect {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+#bg {
+  filter: var(--filter);
+}
+#reflect {
+  filter: url(#filter) var(--filter);
+  transform-origin: center;
+  /*
+  transform: scale3d(1, -1, 1);
+*/
+  transform: scale3d(1.1, -1.1, 1);
+}
+#base {
+  mask-image: linear-gradient(
+    to bottom,
+    white,
+    white calc(var(--ratio) - var(--gap)),
+    rgba(255, 255, 255, 0) calc(var(--ratio) + var(--gap)),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.reflect-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  z-index: -1;
+}
+
+.main-reflect {
+  position: relative;
+  mix-blend-mode: overlay;
+}
+.section-reflect {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

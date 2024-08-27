@@ -1,0 +1,72 @@
+{
+  "name": "@core-ui/react-mui-core",
+  "private": false,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc --build && pnpm run copy:base",
+    "copy:base": "copyfiles -u 1 src/base/*.ts dist",
+    "docs": "typedoc --out docs",
+    "preview": "vite preview",
+    "release": "pnpm i && pnpm build && npm version patch && npm publish"
+  },
+  "exports": {
+    ".": "./dist/index.js",
+    "./clsx": "./dist/base/clsx.js",
+    "./date": "./dist/base/date.js",
+    "./lab": "./dist/base/lab.js",
+    "./materials": "./dist/base/materials.js",
+    "./moment": "./dist/base/moment.js",
+    "./style": "./dist/base/style.js",
+    "./icons": "./dist/base/icons.js"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@core-config/eslint-plugin": "workspace:^",
+    "@core-config/release": "workspace:^",
+    "@core-config/tsconfig": "workspace:^",
+    "@core-config/typedoc": "workspace:^",
+    "@core-ui/react-core": "workspace:^",
+    "@core-utils/utils-helpers": "workspace:^",
+    "@types/node": "^20.11.24",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "copyfiles": "^2.4.1",
+    "postcss": "^8.4.38",
+    "postcss-preset-mantine": "^1.14.4",
+    "postcss-simple-vars": "^7.0.1",
+    "tslib": "^2.6.2",
+    "typescript": "^5.2.2"
+  },
+  "workspaces": [
+    "@core-api/*",
+    "@core-ui/*",
+    "@core-utils/*",
+    "@core-sdk/*",
+    "@core-config/*"
+  ],
+  "dependencies": {
+    "@core-ui/react-context": "workspace:^",
+    "@core-ui/react-mobx-state": "workspace:^",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/icons-material": "5.14.0",
+    "@mui/lab": "5.0.0-alpha.136",
+    "@mui/material": "5.14.0",
+    "@mui/styles": "5.14.0",
+    "@mui/x-date-pickers": "6.11.1",
+    "clsx": "^2.1.1",
+    "moment": "^2.30.1",
+    "notistack": "^3.0.1"
+  }
+}

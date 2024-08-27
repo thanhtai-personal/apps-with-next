@@ -1,0 +1,10 @@
+.PageSlide-container {
+  width: 100%;
+  animation: fade_in 0.25 ease-in-out;
+}
+
+@keyframes fade_in {
+  0% {
+    opacity: 0.2;
+  }
+}

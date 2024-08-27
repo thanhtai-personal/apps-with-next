@@ -1,0 +1,77 @@
+/*  */
+.gsaplp1 {
+  background: #00d2ff;
+  background: -webkit-linear-gradient(to bottom, #3a7bd5, #00d2ff);
+  background: linear-gradient(to bottom, #3a7bd5, #00d2ff);
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.gsaplp1-container {
+  width: 100%;
+  height: 100%;
+  background: white;
+  padding: 1rem;
+  /* hide the page until load time */
+  display: none;
+}
+
+/*  */
+.gsaplp1-loader {
+  width: 150vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -150vw;
+  z-index: 2;
+}
+
+.gsaplp1-txt {
+  font-family: tahoma;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 5rem;
+  color: black;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.gsaplp1-ap {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: -50px;
+  transform: rotate(90deg) translateY(-50%);
+  transform-origin: top;
+}
+
+.gsaplp1-tr {
+  width: 0;
+  height: 0;
+  border-top: 50vh solid transparent;
+  border-left: 50vw solid white;
+  border-bottom: 50vh solid transparent;
+
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.gsaplp1-bx {
+  width: 100%;
+  width: 100vw;
+  height: 100%;
+  height: 100vh;
+  background: white;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}

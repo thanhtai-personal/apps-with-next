@@ -1,0 +1,42 @@
+{
+  "name": "@web/core",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean:cache": "node ./scripts/cleanup-cache.js",
+    "clean:build": "node ./scripts/cleanup.js",
+    "clean:modules": "node ./scripts/cleanup-modules.js",
+    "clean:docs": "node ./scripts/cleanup-docs.js",
+    "docs": "turbo docs",
+    "server:build": "turbo server:build",
+    "server:dev": "turbo server:dev",
+    "docs:all": "typedoc",
+    "clean": "pnpm run clean:modules && pnpm run clean:cache && pnpm run clean:build",
+    "build": "turbo build",
+    "build:dev": "pnpm run clean && pnpm install && turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "release:all": "turbo release"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5",
+    "typedoc": "^0.25.11",
+    "fs-extra": "^11.2.0"
+  },
+  "workspaces": [
+    "@core-api/*",
+    "@core-ui/*",
+    "@core-utils/*",
+    "@core-sdk/*",
+    "@core-config/*"
+  ],
+  "dependencies": {
+    "turbo": "^1.13.2"
+  },
+  "packageManager": "pnpm@8.15.4"
+}

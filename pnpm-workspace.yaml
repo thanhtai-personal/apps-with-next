@@ -1,0 +1,27 @@
+packages:
+  # all packages in direct subdirs of packages/
+  # - "client/**"
+  - "client/builtIn/react-novels"
+  - "client/lib/api-client"
+  - "client/lib/react-hooks"
+  - "client/sdk/core"
+  - "client/sdk/react-telegram"
+  - "client/ui/mui/react-core-mui"
+  - "client/ui/react-animates"
+  - "client/ui/react-context"
+  - "client/ui/react-core"
+  - "client/ui/react-mobx-state"
+  - "client/ui/react-tsparticles"
+  - "client/ui/react-viewFrames"
+  - "client/ui/react-web3"
+  - "client/ui/react-lazyload"
+  # all packages in subdirs of components/
+  - "server/builtIn/novals-api"
+  - "server/builtIn/novals-gateway"
+  - "server/nestjs/*"
+  - "shared/**"
+  # all packages in direct subdirs of packages/
+  #- "apps/**"
+  - "apps/novels"
+  # exclude packages that are inside test directories
+  - "!**/test/**"

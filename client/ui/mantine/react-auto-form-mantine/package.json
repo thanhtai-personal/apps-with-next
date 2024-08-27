@@ -1,0 +1,50 @@
+{
+  "name": "@core-ui/react-auto-form-mantine",
+  "version": "0.0.0",
+  "main": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc --build && pnpm run build:tailwindcss",
+    "build:tailwindcss": "tailwindcss build src/tailwind.css -o ./dist/styles.css",
+    "docs": "typedoc --out docs",
+    "release": "pnpm i && pnpm build && npm version patch && npm publish",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "peerDependencies": {
+    "@core-ui/react-hooks-form": "workspace:^",
+    "@core/json-schema": "workspace:^",
+    "@core-utils/utils-helpers": "workspace:^",
+    "react": "18.2.0"
+  },
+  "workspaces": [
+    "@core-api/*",
+    "@core-ui/*",
+    "@core-utils/*",
+    "@core-sdk/*",
+    "@core-config/*"
+  ],
+  "dependencies": {
+    "@core-ui/react-mantine-core": "workspace:^"
+  },
+  "devDependencies": {
+    "@tabler/icons-react": "^2.44.0",
+    "@core-config/eslint-plugin": "workspace:^",
+    "@core-config/release": "workspace:^",
+    "@core-config/tsconfig": "workspace:^",
+    "@core-config/typedoc": "workspace:^",
+    "@core-ui/react-hooks-form": "workspace:^",
+    "@core-utils/utils-helpers": "workspace:^",
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "18.2.8",
+    "dayjs": "^1.11.10",
+    "react-hook-form": "^7.49.2",
+    "semantic-release": "^23.0.2",
+    "typedoc": "^0.25.11",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.3.3"
+  }
+}

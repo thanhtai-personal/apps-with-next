@@ -1,0 +1,41 @@
+{
+  "name": "@core-ui/react-drawer",
+  "version": "0.0.0",
+  "main": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc --build",
+    "docs": "typedoc --out docs",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "pnpm i && pnpm build && npm version patch && npm publish"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "workspaces": [
+    "@core-api/*",
+    "@core-ui/*",
+    "@core-utils/*",
+    "@core-sdk/*",
+    "@core-config/*"
+  ],
+  "dependencies": {
+    "@core-ui/react-core": "workspace:^",
+    "@core-ui/react-context": "workspace:^"
+  },
+  "devDependencies": {
+    "@core-config/eslint-plugin": "workspace:^",
+    "@core-config/release": "workspace:^",
+    "@core-config/tsconfig": "workspace:^",
+    "@core-config/typedoc": "workspace:^",
+    "@types/node": "^20.11.24",
+    "@types/react": "^18.2.56",
+    "@types/react-dom": "^18.2.19",
+    "typescript": "^5.4.5"
+  }
+}

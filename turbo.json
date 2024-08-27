@@ -1,0 +1,46 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "pipeline": {
+    "server:build": {
+      "dependsOn": ["^server:build"],
+      "outputs": ["dist/**"],
+      "cache": false
+    },
+    "server:dev": {
+      "dependsOn": ["^server:dev"],
+      "cache": false,
+      "persistent": true
+    },
+    
+    "migration:run": {
+      "dependsOn": ["^migration:run"],
+      "cache": false
+    },
+    "docker": {
+      "dependsOn": ["^docker"],
+      "cache": false
+    },
+    
+    "dev": {
+      "dependsOn": ["^dev"],
+      "cache": false,
+      "persistent": true
+    },
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**"],
+      "cache": false
+    },
+
+    "docs": {
+      "dependsOn": ["^docs"],
+      "outputs": ["docs/**"],
+      "cache": false
+    },
+    "release": {
+      "dependsOn": ["^release"],
+      "cache": false,
+      "persistent": false
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "name": "@core-ui/react-animates",
+  "version": "0.0.0",
+  "main": "./dist/index.js",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc --build && npm run build:tailwindcss && npm run copy:css & npm run copy:css:1",
+    "copy:css": "copyfiles -u 1 src/**/*.css dist",
+    "copy:css:1": "copyfiles -u 1 src/*.css dist",
+    "build:tailwindcss": "tailwindcss build src/tailwind.css -o ./dist/styles.css",
+    "docs": "typedoc --out docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "workspaces": [
+    "@core-api/*",
+    "@core-ui/*",
+    "@core-utils/*",
+    "@core-sdk/*",
+    "@core-config/*"
+  ],
+  "dependencies": {
+    "@core-utils/react-hooks": "workspace:*",
+    "@core-utils/utils-helpers": "workspace:*",
+    "@gsap/react": "^2.1.1",
+    "@tailwindcss/forms": "^0.5.7",
+    "@tsparticles/all": "^3.5.0",
+    "@tsparticles/basic": "^3.5.0",
+    "@tsparticles/engine": "^3.5.0",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.5.0",
+    "autoprefixer": "^10.4.18",
+    "framer-motion": "^11.2.10",
+    "gsap": "^3.12.5",
+    "react-icons": "^5.0.1",
+    "react-tsparticles": "^2.12.2",
+    "rollup-plugin-postcss": "^4.0.2",
+    "tsparticles": "^3.5.0",
+    "tsparticles-engine": "^2.12.0"
+  },
+  "devDependencies": {
+    "@core-config/eslint-plugin": "workspace:*",
+    "@core-config/release": "workspace:*",
+    "@core-config/tsconfig": "workspace:*",
+    "@core-config/typedoc": "workspace:*",
+    "@types/node": "^20.11.24",
+    "@types/react": "^18.2.56",
+    "@types/react-dom": "^18.2.19",
+    "copyfiles": "^2.4.1",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.3.2",
+    "vite-plugin-lib-inject-css": "^2.0.0"
+  }
+}
