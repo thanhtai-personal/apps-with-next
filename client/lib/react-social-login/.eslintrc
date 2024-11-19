@@ -1,4 +1,0 @@
-{
-  "extends": ["plugin:@ttc-config/eslint-plugin-ttc/base"],
-  "plugins": ["@ttc-config/eslint-plugin-ttc"]
-}

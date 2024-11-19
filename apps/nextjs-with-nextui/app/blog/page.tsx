@@ -1,9 +1,7 @@
-import { title } from "@/components/primitives";
+import BlogPage from "@/SSRComponents/blog";
 
-export default function BlogPage() {
+export default function Blog() {
   return (
-    <div>
-      <h1 className={title()}>Blog</h1>
-    </div>
+    <BlogPage />
   );
 }

@@ -1,9 +1,7 @@
-import { title } from "@/components/primitives";
+import PricingPage from "@/SSRComponents/pricing";
 
-export default function PricingPage() {
+export default function Pricing() {
   return (
-    <div>
-      <h1 className={title()}>Pricing</h1>
-    </div>
+    <PricingPage />
   );
 }

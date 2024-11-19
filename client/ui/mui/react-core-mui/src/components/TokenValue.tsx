@@ -1,7 +1,7 @@
 import Flex from "./Flex";
 import { ReactNode } from "react";
 
-import { observer } from '@core-ui/react-mobx-state';
+import { observer } from '@core-utils/react-mobx-state';
 import Text from './Text';
 import { Colors } from '../colors';
 

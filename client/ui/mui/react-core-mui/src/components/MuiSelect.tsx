@@ -4,7 +4,7 @@ import Flex from "./Flex";
 import Text from "./Text";
 
 import { AppTheme } from "../theme";
-import { observer } from "@core-ui/react-mobx-state";
+import { observer } from "@core-utils/react-mobx-state";
 
 export const MuiSelect = observer((props) => {
   const styles = useStyles(props);

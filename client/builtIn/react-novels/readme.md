@@ -1,1 +1,0 @@
-\*\* Handle goat tap logic

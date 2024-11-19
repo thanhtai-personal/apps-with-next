@@ -1,6 +1,6 @@
 import RefreshIcon from '@mui/icons-material/Refresh';
 import { IconButton } from "@mui/material";
-import { observer } from "@core-ui/react-mobx-state";
+import { observer } from "@core-utils/react-mobx-state";
 import useResponsive from "../hooks/useResponsive";
 import { Colors } from '../colors';
 

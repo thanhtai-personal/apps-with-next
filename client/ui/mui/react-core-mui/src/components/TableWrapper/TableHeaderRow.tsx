@@ -9,7 +9,7 @@ import { Fade, Menu, MenuItem } from "@mui/material";
 import Text from "../Text";
 
 import { Colors } from "../../colors";
-import { observer } from "@core-ui/react-mobx-state";
+import { observer } from "@core-utils/react-mobx-state";
 
 export function TableHeaderRow(props: any) {
   const classes = useStyles();

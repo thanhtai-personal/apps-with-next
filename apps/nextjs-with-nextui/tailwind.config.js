@@ -1,11 +1,12 @@
-import {nextui} from '@nextui-org/theme'
+import { nextui } from '@core-ui/nextui-core/dist/base/theme'
+import { lightColors, darkColors } from "./config/themes/colors"
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
-    './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}'
+    './node_modules/@core-ui/nextui-core/node_modules/@nextui-org/**/*.{js,ts,jsx,tsx}'
   ],
   theme: {
     extend: {
@@ -16,5 +17,17 @@ module.exports = {
     },
   },
   darkMode: "class",
-  plugins: [nextui()],
+  plugins: [nextui({
+    themes: {
+      light: {
+        // ...
+        colors: lightColors,
+      },
+      dark: {
+        // ...
+        colors: darkColors,
+      },
+      // ... custom themes
+    },
+  })],
 }

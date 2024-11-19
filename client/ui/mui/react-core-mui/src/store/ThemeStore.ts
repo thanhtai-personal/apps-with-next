@@ -1,4 +1,4 @@
-import { BaseStore, makeObservable, observable } from "@core-ui/react-mobx-state";
+import { BaseStore, makeObservable, observable } from "@core-utils/react-mobx-state";
 import { createAppTheme } from "../theme";
 
 export type ThemeMapping = {

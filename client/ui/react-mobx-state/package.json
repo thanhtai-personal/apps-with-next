@@ -1,5 +1,5 @@
 {
-  "name": "@core-ui/react-mobx-state",
+  "name": "@core-utils/react-mobx-state",
   "version": "0.0.0",
   "main": "./dist/index.js",
   "files": [

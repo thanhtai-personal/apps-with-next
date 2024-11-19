@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 import { ThemeProvider } from "@mui/material/styles";
 import { useMuiCoreStore } from "../store";
-import { observer } from "@core-ui/react-mobx-state";
+import { observer } from "@core-utils/react-mobx-state";
 import { createAppTheme } from "../theme";
 
 const defaultTheme = createAppTheme({});

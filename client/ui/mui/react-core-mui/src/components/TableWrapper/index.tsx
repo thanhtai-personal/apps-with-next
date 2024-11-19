@@ -3,7 +3,7 @@ import {
   Table, TableBody, TableCell, TableContainer, TableHead, TableRow
 } from "@mui/material"
 import { makeStyles } from "@mui/styles";
-import { observer, useLocalObservable } from "@core-ui/react-mobx-state";
+import { observer, useLocalObservable } from "@core-utils/react-mobx-state";
 import Flex from "../Flex";
 import TableHeaderRow from "./TableHeaderRow";
 import TableLoading from "./TableLoading";

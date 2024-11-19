@@ -16,8 +16,8 @@ import Text from "./Text";
 import { AppTheme } from '../theme';
 import { Colors } from '../colors';
 import useResponsive from '../hooks/useResponsive';
-// import { useLocalStore } from '@core-ui/react-mobx-state';
-// import { Observer, useLocalStore } from '@core-ui/react-mobx-state';
+// import { useLocalStore } from '@core-utils/react-mobx-state';
+// import { Observer, useLocalStore } from '@core-utils/react-mobx-state';
 // import { ReactComponent as GreenTickIcon } from "assets/icons/greenTick-icon.svg";
 // import { ReactComponent as RedCrossIcon } from "assets/icons/redCross-icon.svg";
 

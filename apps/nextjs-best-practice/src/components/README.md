@@ -1,1 +1,0 @@
-All components in there must CLR.

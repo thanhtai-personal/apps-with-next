@@ -1,9 +1,7 @@
-import { title } from "@/components/primitives";
+import AboutPage from "@/SSRComponents/about"
 
-export default function AboutPage() {
+export default function About() {
   return (
-    <div>
-      <h1 className={title()}>About</h1>
-    </div>
+    <AboutPage />
   );
 }

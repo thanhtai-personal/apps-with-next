@@ -1,6 +1,6 @@
 import { Collapse } from '@mui/material';
 import { useEffect } from 'react';
-import { useLocalObservable, observer } from "@core-ui/react-mobx-state"
+import { useLocalObservable, observer } from "@core-utils/react-mobx-state"
 import Flex from './Flex';
 
 export const DelayTooltip = observer(props => {

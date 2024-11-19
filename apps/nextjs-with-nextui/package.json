@@ -1,5 +1,5 @@
 {
-	"name": "next-app-template",
+	"name": "@apps/next-nextui-template",
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
@@ -9,17 +9,6 @@
 		"lint": "eslint . --ext .ts,.tsx -c .eslintrc.json --fix"
 	},
 	"dependencies": {
-		"@nextui-org/button": "2.0.38",
-		"@nextui-org/code": "2.0.33",
-		"@nextui-org/input": "2.2.5",
-		"@nextui-org/kbd": "2.0.34",
-		"@nextui-org/link": "2.0.35",
-		"@nextui-org/listbox": "2.1.27",
-		"@nextui-org/navbar": "2.0.37",
-		"@nextui-org/snippet": "2.0.43",
-		"@nextui-org/switch": "2.0.34",
-		"@nextui-org/system": "2.2.6",
-		"@nextui-org/theme": "2.2.11",
 		"@react-aria/ssr": "3.9.4",
 		"@react-aria/visually-hidden": "3.8.12",
 		"clsx": "2.1.1",
@@ -27,14 +16,23 @@
 		"intl-messageformat": "^10.5.0",
 		"next": "14.2.4",
 		"next-themes": "^0.2.1",
-		"react": "18.3.1",
-		"react-dom": "18.3.1"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+		"@core-ui/nextui-core": "workspace:^",
+		"@core-ui/react-animates": "workspace:^",
+		"@core-utils/react-unittest": "workspace:^",
+		"@core-utils/react-mobx-state": "workspace:^",
+		"@core-utils/react-hooks": "workspace:^"
 	},
 	"devDependencies": {
+    "@core-config/eslint-plugin": "workspace:^",
+    "@core-config/release": "workspace:^",
+    "@core-config/tsconfig": "workspace:^",
+    "@core-config/typedoc": "workspace:^",
 		"@next/eslint-plugin-next": "^15.0.3",
 		"@types/node": "20.5.7",
-		"@types/react": "18.3.3",
-		"@types/react-dom": "18.3.0",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
 		"@typescript-eslint/eslint-plugin": "8.11.0",
 		"@typescript-eslint/parser": "8.11.0",
 		"autoprefixer": "10.4.19",

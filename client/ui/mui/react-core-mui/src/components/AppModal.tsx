@@ -9,7 +9,7 @@ import Dialog from "@mui/material/Dialog";
 import MuiDialogContent from "@mui/material/DialogContent";
 import { createStyles, makeStyles, withStyles } from "@mui/styles";
 import Flex from "./Flex";
-import { useLocalStore, observer } from "@core-ui/react-mobx-state";
+import { useLocalStore, observer } from "@core-utils/react-mobx-state";
 import { Layers } from "./../constants";
 
 import { useResponsive } from "../hooks";

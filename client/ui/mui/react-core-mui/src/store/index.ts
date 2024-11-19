@@ -1,4 +1,4 @@
-import { createStore } from "@core-ui/react-mobx-state";
+import { createStore } from "@core-utils/react-mobx-state";
 import { ThemeStore } from "./ThemeStore";
 
 export class MuiCoreStore {

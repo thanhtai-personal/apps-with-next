@@ -39,7 +39,7 @@
     "typescript": "^5.2.2"
   },
   "dependencies": {
-    "@core-ui/react-mobx-state": "workspace:^",
+    "@core-utils/react-mobx-state": "workspace:^",
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
     "@mui/icons-material": "5.14.0",
