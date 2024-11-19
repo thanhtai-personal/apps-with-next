@@ -1,8 +1,0 @@
-{
-  "extends": "@core-config/tsconfig/dist/react.json",
-  "compilerOptions": {
-    "outDir": "./dist"
-  },
-  "include": ["src"],
-  "exclude": ["node_modules", "dist", "docs"]
-}

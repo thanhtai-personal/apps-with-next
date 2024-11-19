@@ -1,6 +1,7 @@
 {
   "extends": "@core-config/tsconfig/dist/react.json",
   "compilerOptions": {
+    "jsx": "react",
     "outDir": "./dist",
     "baseUrl": "."
   },

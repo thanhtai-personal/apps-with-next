@@ -1,0 +1,40 @@
+{
+  "name": "@core-utils/utils-helpers",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc --build",
+    "docs": "typedoc --out docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "exports": {
+    ".": "./dist/index.js",
+    "./casing": "./dist/casing.js",
+    "./ensure": "./dist/ensure.js",
+    "./file": "./dist/file.js",
+    "./nil": "./dist/nil.js",
+    "./number": "./dist/number.js",
+    "./object": "./dist/object.js",
+    "./string": "./dist/string.js",
+    "./url": "./dist/url.js",
+    "./secret": "./dist/secret.js",
+    "./name": "./dist/name.js"
+  },
+  "devDependencies": {
+    "@core-config/eslint-plugin": "workspace:^",
+    "@core-config/release": "workspace:^",
+    "@core-config/tsconfig": "workspace:^",
+    "@core-config/typedoc": "workspace:^",
+    "@types/assert": "^1.5.10",
+    "@types/node": "^20.11.24",
+    "semantic-release": "^23.0.2",
+    "typedoc": "^0.25.11",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "assert": "^2.1.0",
+    "nanoid": "^5.0.4"
+  }
+}

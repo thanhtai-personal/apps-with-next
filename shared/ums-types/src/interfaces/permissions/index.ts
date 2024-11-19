@@ -1,0 +1,5 @@
+export * from "./IPermission"
+export * from "./IPermissionCreation"
+export * from "./IPermissionUpdating"
+export * from "./IPermissionResponse"
+export * from "./IPermissionFilter"

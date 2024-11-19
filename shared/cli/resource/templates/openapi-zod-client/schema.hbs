@@ -1,0 +1,10 @@
+/* eslint-disable max-lines */
+import { z } from "zod";
+
+export namespace Zod {
+{{#each schemas}}
+  {{#if @key}}
+  export const {{@key}} = {{{this}}};
+  {{/if}}
+{{/each}}
+}

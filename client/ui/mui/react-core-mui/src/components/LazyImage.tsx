@@ -13,11 +13,13 @@ export interface LazyImageProps {
   loadingElement?: React.ReactNode;
   className?: string;
   containerStyle?: React.CSSProperties;
+  srcSet?: any;
+  sizes?: string;
 }
 
 export const LazyImage: React.FC<LazyImageProps> = ({
   src,
-  alt = '',
+  alt = 'mising-alt',
   lazy = true,
   placeholder = <CircularProgress />,
   width = '100%',
@@ -25,7 +27,9 @@ export const LazyImage: React.FC<LazyImageProps> = ({
   style = {},
   containerStyle = {},
   loadingElement,
-  className
+  className,
+  srcSet,
+  sizes,
 }) => {
   const [isLoading, setIsLoading] = useState(lazy);
   const [hasError, setHasError] = useState(false);
@@ -63,6 +67,8 @@ export const LazyImage: React.FC<LazyImageProps> = ({
           src={src}
           className={className || ""}
           alt={alt}
+          srcSet={srcSet}
+          sizes={sizes}
           style={{
             width: 'auto',
             height: 'auto',

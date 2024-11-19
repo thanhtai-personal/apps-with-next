@@ -1,0 +1,5 @@
+export * from "./IAuthor"
+export * from "./IAuthorCreation"
+export * from "./IAuthorUpdating"
+export * from "./IAuthorResponse"
+export * from "./IAuthorFilter"

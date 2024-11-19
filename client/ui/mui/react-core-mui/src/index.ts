@@ -1,4 +1,4 @@
-export * from "./context"
+export * from "./store"
 export * from "./provider"
 export * from "./colors"
 export * from "./components"

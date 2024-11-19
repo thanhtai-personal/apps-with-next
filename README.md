@@ -1,7 +1,5 @@
 # Server API
 
-[API Running instruction](/server/goat-tap-api/README.md)
-
 # Edit pnpm-workspace.yaml to define what packages you want to build.
 
 # To Run Client App from Workspace Directory

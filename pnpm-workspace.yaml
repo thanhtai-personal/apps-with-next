@@ -1,27 +1,43 @@
 packages:
   # all packages in direct subdirs of packages/
   # - "client/**"
-  - "client/builtIn/react-novels"
   - "client/lib/api-client"
   - "client/lib/react-hooks"
+  - "client/lib/react-social-login"
+  - "client/lib/react-unittest"
+  # - "api-sdk/**"
   - "client/sdk/core"
-  - "client/sdk/react-telegram"
+  - "client/sdk/app-center-gateway"
   - "client/ui/mui/react-core-mui"
   - "client/ui/react-animates"
-  - "client/ui/react-context"
+  - "client/ui/react-performance-utilities"
   - "client/ui/react-core"
   - "client/ui/react-mobx-state"
-  - "client/ui/react-tsparticles"
   - "client/ui/react-viewFrames"
-  - "client/ui/react-web3"
   - "client/ui/react-lazyload"
+  - "client/ui/react-charts"
+  - "client/ui/react-flow"
+
+  # business logic
+  - "client/builtIn/react-novels"
+  - "client/builtIn/react-ums"
+  - "client/builtIn/react-auth"
+  - "client/builtIn/react-recruiter"
+
   # all packages in subdirs of components/
-  - "server/builtIn/novals-api"
-  - "server/builtIn/novals-gateway"
-  - "server/nestjs/*"
+  - "server/libs/*"
+  - "server/domain/api-authentication"
+  - "server/domain/api-appcenter-gateway"
+  - "server/domain/api-novels"
+  - "server/domain/api-recruiter"
+  - "server/domain/api-ums"
+  - "server/modules/**"
+  - "server/nestjs/**"
+
+  # all packages in subdirs of shared/
   - "shared/**"
+
   # all packages in direct subdirs of packages/
-  #- "apps/**"
-  - "apps/novels"
+  - "apps/nextjs-with-nextui"
   # exclude packages that are inside test directories
   - "!**/test/**"

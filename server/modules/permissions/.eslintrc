@@ -1,0 +1,4 @@
+{
+  "extends": ["plugin:@core-config/eslint-plugin/base"],
+  "plugins": ["@core-config/eslint-plugin"],
+}

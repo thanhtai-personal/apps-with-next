@@ -10,7 +10,7 @@ import { SpaceIn as SpaceInComponent } from "./SpaceIn";
 import { WaterText as WaterTextComponent } from "./WaterText";
 import { BubbleWrapper as BubbleWrapperComponent } from "./BubbleWrapper";
 import { PlasmaBall as PlasmaBallComponent } from "./PlasmaBall";
-import { TypeWriter as TypeWriterComponent } from "./TypeWriter";
+import { Typewriter as TypeWriterComponent } from "./TypeWriter";
 import { LoadingBlock as LoadingBlockComponent } from "./LoadingBlock";
 import { LoadingIcon as LoadingIconComponent } from "./LoadingIcon";
 import { AnimatedNumber as AnimatedNumberCommponent } from "./AnimatedNumber";
@@ -28,9 +28,15 @@ import { SlideLeftAppear as SlideLeftAppearComponent } from "./SlideLeftAppear";
 import { ZoomInAppear as ZoomInAppearComponent } from "./ZoomInAppear";
 import { ZoomOutAppear as ZoomOutAppearComponent } from "./ZoomOutAppear";
 import { ExpandDown as ExpandDownComponent } from "./ExpandDown";
+import { RotateFromLeft as RotateFromLeftComponent } from "./RotateFromLeft";
 import { ExpandUp as ExpandUpComponent } from "./ExpandUp";
 import { Tornado as TornadoComponent } from "./Tornado";
+import { FadeAppear as FadeAppearComponent } from "./FadeAppear";
+import { SplastShader as SplastShaderComponent } from "./SplastShader";
 import { Wind as WindComponent } from "./Wind";
+import { Fire as FireComponent } from "./Fire";
+import { Smoke as SmokeComponent } from "./Smoke";
+import { Smoke2 as Smoke2Component } from "./Smoke2";
 import { ASecondBounce as ASecondBounceComponent } from "./ASecondBounce";
 import FireflyNightBgComponent from "./FireflyNightBg"
 import "./tailwind.css"
@@ -67,8 +73,14 @@ export namespace Animates {
   export const ZoomOutAppear = ZoomOutAppearComponent
   export const ExpandDown = ExpandDownComponent
   export const ExpandUp = ExpandUpComponent
+  export const RotateFromLeft = RotateFromLeftComponent
   export const Tornado = TornadoComponent
+  export const FadeAppear = FadeAppearComponent
+  export const SplastShader = SplastShaderComponent
   export const Wind = WindComponent
+  export const Fire = FireComponent
+  export const Smoke = SmokeComponent
+  export const Smoke2 = Smoke2Component
   export const ASecondBounce = ASecondBounceComponent
   export const FireflyNightBg = FireflyNightBgComponent
 }
@@ -77,3 +89,9 @@ export * from "./FadeUpDownAppear"
 export * from "./PageSlide"
 export * from "./tsparticle"
 export * from "./gsap"
+export * from "./aos"
+export * from "./meteor"
+export * from "./parallax"
+export * from "./game"
+export * from "./card"
+export * from "./ListScrollAnimate"

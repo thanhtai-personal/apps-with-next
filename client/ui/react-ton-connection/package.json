@@ -18,13 +18,6 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
-  "workspaces": [
-    "@core-api/*",
-    "@core-ui/*",
-    "@core-utils/*",
-    "@core-sdk/*",
-    "@core-config/*"
-  ],
   "dependencies": {
     "@core-ui/react-core": "workspace:^",
     "@core-utils/utils-helpers": "workspace:^",

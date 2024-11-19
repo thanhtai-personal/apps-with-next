@@ -51,7 +51,7 @@ export const LazyLoadVideo = ({
       <div className={`relative w-full h-full`}>
         {!loaded && (
           <div
-            className='absolute inset-0 flex bg-black justify-center items-center p-4'
+            className='absolute w-full inset-0 flex bg-black justify-center items-center p-0'
             style={{
               minHeight: 180,
             }}

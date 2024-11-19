@@ -1,0 +1,1 @@
+All logic should be define here to split logic with ui presentation

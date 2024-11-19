@@ -1,0 +1,371 @@
+/* VISUAL 
+==================================================*/
+.water-meteor {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.water-meteor {
+  overflow: hidden;
+  -webkit-filter: blur(0px);
+}
+
+.water-meteor span.particle {
+  display: block;
+  position: relative;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  box-shadow: 0 0 0.2em #fff;
+}
+
+.water-meteor span.particle:after,
+.water-meteor span.particle:before {
+  content: "";
+  position: relative;
+  display: block;
+  top: -0.66em;
+  left: -0.66em;
+  width: 0.2em;
+  border-radius: 50%;
+  height: 0.2em;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 7px #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.water-meteor span.particle:before {
+  top: 0.16em;
+  left: 0.25em;
+}
+
+.water-meteor span.particle.small:after,
+.water-meteor span.particle.small:before {
+  opacity: 0.1;
+}
+
+.water-meteor span.particle.small {
+  width: 0.04em;
+  height: 0.04em;
+}
+
+.water-meteor span.particle:nth-child(1) {
+  top: 1em;
+  left: 1em;
+}
+
+.water-meteor span.particle:nth-child(2) {
+  top: -0.3em;
+  left: -1.5em;
+}
+
+.water-meteor span.particle:nth-child(3) {
+  top: 0px;
+  left: 1.5em;
+}
+
+.water-meteor span.particle:nth-child(4) {
+  top: 1em;
+  left: 1.5em;
+}
+
+.water-meteor span.particle:nth-child(5) {
+  top: -2.17em;
+  left: -0.33em;
+}
+
+.water-meteor span.particle:nth-child(6) {
+  top: 0.66em;
+  left: -0.5em;
+}
+
+.water-meteor span.particle:nth-child(7) {
+  top: -1.33em;
+  left: -0.33em;
+}
+
+.water-meteor span.particle:nth-child(8) {
+  top: -1.67em;
+  left: 1em;
+}
+
+.water-meteor span.particle:nth-child(9) {
+  top: -5em;
+  left: -4.17em;
+}
+
+.water-meteor span.particle:nth-child(10) {
+  top: -3.33em;
+  left: -10.66em;
+}
+
+.water-meteor span.particle:nth-child(11) {
+  top: -2.83em;
+  left: -0.5em;
+}
+
+.water-meteor span.particle:nth-child(12) {
+  top: -21em;
+  left: -11em;
+}
+
+.water-meteor span.particle:nth-child(13) {
+  top: -5.5em;
+  left: -3em;
+}
+
+.water-meteor span.particle:nth-child(14) {
+  top: -6.66em;
+  left: -1.166em;
+}
+
+.water-meteor span.particle:nth-child(15) {
+  top: -5em;
+  left: -1.666em;
+}
+
+.water-meteor span.particle:nth-child(16) {
+  top: -3.333em;
+  left: -0.166em;
+}
+
+.water-meteor span.particle:nth-child(17) {
+  top: -2.5em;
+  left: -1em;
+}
+
+.water-meteor span.particle:nth-child(18) {
+  top: -3em;
+  left: -2.1em;
+}
+
+.water-meteor span.particle:nth-child(19) {
+  top: -1.5em;
+  left: 0.66em;
+}
+
+.water-meteor span.particle:nth-child(20) {
+  top: -5em;
+  left: -1em;
+}
+
+/* ANIMATION
+==================================================*/
+
+
+@keyframes meteor {
+  0% {
+    opacity: 0.5;
+    width: 1em;
+    height: 1em;
+    background: rgba(3, 166, 150, 1);
+    box-shadow: 0 0 0.5em 0.66em rgba(3, 166, 150, 0.5),
+      0 0 0.17em rgba(255, 255, 255, 0.5), inset 0 0 0 #fff;
+  }
+
+  50% {
+    opacity: 1;
+    width: 1.2em;
+    height: 1.2em;
+    background: rgba(23, 186, 190, 1);
+    box-shadow: 0 0 0.17em rgba(255, 255, 255, 1),
+      0 0 0.5em 0.66em rgba(23, 186, 170, 1), inset 0 0 1em #fff;
+  }
+
+  100% {
+    opacity: 1;
+    width: 1.2em;
+    height: 1.2em;
+    background: rgba(23, 186, 190, 1);
+    box-shadow: 0 0 0.17em rgba(255, 255, 255, 1),
+      0 0 0.5em 0.66em rgba(23, 186, 170, 1), inset 0 0 1em #fff;
+  }
+}
+
+@-webkit-keyframes meteor {
+  0% {
+    opacity: 0.5;
+    width: 1em;
+    height: 1em;
+    background: rgba(3, 166, 150, 1);
+    box-shadow: 0 0 0.5em 0.66em rgba(3, 166, 150, 0.5),
+      0 0 0.17em rgba(255, 255, 255, 0.5), inset 0 0 0 #fff;
+  }
+
+  50% {
+    opacity: 1;
+    width: 1.2em;
+    height: 1.2em;
+    background: rgba(23, 186, 190, 1);
+    box-shadow: 0 0 0.17em rgba(255, 255, 255, 1),
+      0 0 0.5em 0.66em rgba(23, 186, 170, 1), inset 0 0 1em #fff;
+  }
+
+  100% {
+    opacity: 1;
+    width: 1em;
+    height: 1em;
+    background: rgba(23, 186, 190, 1);
+    box-shadow: 0 0 0.17em rgba(255, 255, 255, 1),
+      0 0 0.5em 0.66em rgba(23, 186, 170, 1), inset 0 0 1em #fff;
+  }
+}
+
+@-moz-keyframes meteor {
+  0% {
+    opacity: 0.5;
+    width: 1em;
+    height: 1em;
+    background: rgba(3, 166, 150, 1);
+    box-shadow: 0 0 0.5em 0.66em rgba(3, 166, 150, 0.5),
+      0 0 0.17em rgba(255, 255, 255, 0.5), inset 0 0 0 #fff;
+  }
+
+  50% {
+    opacity: 1;
+    width: 1.2em;
+    height: 1.2em;
+    background: rgba(23, 186, 190, 1);
+    box-shadow: 0 0 0.17em rgba(255, 255, 255, 1),
+      0 0 0.5em 0.66em rgba(23, 186, 170, 1), inset 0 0 1em #fff;
+  }
+
+  100% {
+    opacity: 1;
+    width: 1.2em;
+    height: 1.2em;
+    background: rgba(23, 186, 190, 1);
+    box-shadow: 0 0 0.17em rgba(255, 255, 255, 1),
+      0 0 0.5em 0.66em rgba(23, 186, 170, 1), inset 0 0 1em #fff;
+  }
+}
+
+@keyframes particle {
+  0% {
+    margin: 0.17em 0 0 1em;
+    opacity: 0;
+    background: #03a678;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  /* 100% {
+    margin: -0.17em 0 0 -100px;
+    opacity: 0;
+    background: #fff;
+  } */
+}
+
+@-webkit-keyframes particle {
+  0% {
+    margin: 0.17em 0 0 1em;
+    opacity: 0;
+    background: #03a678;
+  }
+
+  80% {
+    opacity: 1;
+  }
+/* 
+  100% {
+    margin: -0.17em 0 0 -1.67em;
+    opacity: 0;
+    background: #fff;
+  } */
+}
+
+@keyframes particle-small {
+  0% {
+    width: 0.33em;
+    height: 0.33em;
+  }
+
+  100% {
+    width: 0.66em;
+    height: 0.66em;
+  }
+}
+
+@-webkit-keyframes particle-small {
+  0% {
+    width: 0.33em;
+    height: 0.33em;
+  }
+
+  100% {
+    width: 0.66em;
+    height: 0.66em;
+  }
+}
+
+@-moz-keyframes particle {
+  0% {
+    margin: 0.17em 0 0 1em;
+    opacity: 0;
+    background: #03a678;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    margin: -0.17em 0 0 -1.67em;
+    opacity: 0;
+    background: #fff;
+  }
+}
+
+@-moz-keyframes particle-small {
+  0% {
+    width: 0.33em;
+    height: 0.33em;
+  }
+
+  100% {
+    width: 0.66em;
+    height: 0.66em;
+  }
+}
+
+div.water-meteor {
+  animation: meteor 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation: meteor 5s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation: meteor 5s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
+}
+
+.water-meteor span.particle,
+.water-meteor span.particle:after,
+.water-meteor span.particle:before {
+  animation: particle 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation: particle 5s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation: particle 5s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
+}
+
+.water-meteor span.small.particle,
+.water-meteor span.small.particle:after,
+.water-meteor span.small.particle:before {
+  animation: particle 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation: particle 5s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation: particle 5s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
+}

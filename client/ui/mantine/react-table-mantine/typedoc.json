@@ -1,4 +1,0 @@
-{
-  "extends": ["@core-config/typedoc"],
-  "entryPoints": ["src/index.tsx"]
-}

@@ -13,13 +13,6 @@
     "build": "pnpm run copy:js",
     "copy:js": "copyfiles -u 1 src/**/*.js dist"
   },
-  "workspaces": [
-    "@core-api/*",
-    "@core-ui/*",
-    "@core-utils/*",
-    "@core-sdk/*",
-    "@core-config/*"
-  ],
   "dependencies": {
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^11.1.0",

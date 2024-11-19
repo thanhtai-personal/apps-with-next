@@ -454,25 +454,29 @@ export const numberToString = (value: number, digit: number = 2) => {
   return value;
 };
 
-export const formatFullDate = (date: any) => {
-  const currentDate = new Date(date);
+export const formatFullDate = (date: any, opt?: any) => {
+  try {
+    const currentDate = new Date(date);
 
-  // Define options for date and time formatting
-  const options = {
-    year: "numeric",
-    month: "long",
-    day: "2-digit",
-    hour: "numeric",
-    minute: "numeric",
-    hour12: true,
-  };
+    // Define options for date and time formatting
+    const options = opt || {
+      year: "numeric",
+      month: "long",
+      day: "2-digit",
+      hour: "numeric",
+      minute: "numeric",
+      hour12: true,
+    };
 
-  // Format the date using Intl.DateTimeFormat with options
-  const formattedDateString = new Intl.DateTimeFormat("en-US", options as any).format(
-    currentDate
-  );
+    // Format the date using Intl.DateTimeFormat with options
+    const formattedDateString = new Intl.DateTimeFormat("en-US", options as any).format(
+      currentDate
+    );
 
-  return formattedDateString;
+    return formattedDateString;
+  } catch (error) {
+    return ""
+  }
 };
 
 export const formatDateAsTime = (date: any) => {

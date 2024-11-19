@@ -1,0 +1,1 @@
+define common hook or import it from @core-utils/react-hooks

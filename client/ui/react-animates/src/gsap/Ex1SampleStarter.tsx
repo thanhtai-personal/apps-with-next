@@ -33,7 +33,7 @@ export default function Boxes() {
       <section className="boxes-container" ref={container}>
         <h2>Use the button to toggle a Timeline</h2>
         <div>
-          <button onClick={toggleTimeline}>Toggle Timeline</button>
+          <button className="gsap-button" onClick={toggleTimeline}>Toggle Timeline</button>
         </div>
         <div className="box gradient-blue">Box 1</div>
         <div className="box gradient-blue">Box 2</div>

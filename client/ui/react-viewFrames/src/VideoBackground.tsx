@@ -8,6 +8,7 @@ export interface IVideoBackground {
   id: string;
   preloadSrc: string;
   disabled?: boolean;
+  muted?: boolean;
   classes?: {
     container?: string;
   }
@@ -21,6 +22,7 @@ export const VideoBackground = ({
   classes,
   preloadSrc,
   disabled,
+  muted = false,
 }: IVideoBackground) => {
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -48,7 +50,7 @@ export const VideoBackground = ({
         src={src}
         preloadSrc={preloadSrc}
         autoPlay
-        muted
+        muted={muted}
         loop
         sourceClass='w-full h-full'
         videoClass={`w-full h-full object-cover`}

@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Bar,
   CartesianGrid,
@@ -27,7 +28,7 @@ export interface IBarChart {
   yUnit?: string;
 }
 
-export const BarChart = ({ data, barNames, unit = 1, yUnit }: IBarChart) => {
+export const DefaultBarChart = ({ data, barNames, unit = 1, yUnit }: IBarChart) => {
   const chartData = (data || []).map(item => ({
     ...item,
     v1: item.v1 > 0 ? (item.v1 / unit).toFixed(2) : 0,

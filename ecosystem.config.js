@@ -1,0 +1,43 @@
+module.exports = {
+  apps: [
+    // {
+    //   name: 'jobslistting-client',
+    //   script: 'serve',
+    //   args: 'apps/recruiter/dist 5173 --spa',
+    //   env: {
+    //     NODE_ENV: "production",
+    //     VITE_BASE_URL: 'https://34.135.118.246:5173/',
+    //     VITE_API_URL: 'http://34.135.118.246:6789/',
+    //     VITE_TELEGRAM_BOT_URL: 'https://t.me/jobslisttingdevbot',
+    //     VITE_TELEGRAM_BOT_WALLET_ADDRESS: 'UQDozoVJzP-Va28QA8A3OG01ebBH31h1ofxb2wmzKYx-3pVK',
+    //     VITE_IS_TEST_NET: true,
+    //   },
+    // },
+    {
+      name: 'jobslistting-api',
+      script: 'node',
+      args: ['dist/main.js'],
+      env: {
+        PORT: 6789,
+        NODE_ENV: "production",
+        DB_HOST: "127.0.0.1",
+        DB_PORT: "5432",
+        DB_USER: "jobslisting",
+        DB_PASSWORD: "Aaaa@1111",
+        DB_DATABASE: "jobslisting",
+        CORS_ORIGIN: "*",
+        CORS_CREDENTIALS: true,
+        JWT_SECRET: "upgrade cat walk usage you weird blood reject gift spawn food liberty south edit barrel weasel slice dwarf arena say tobacco ",
+        JWT_EXPIRATION: 604800,
+        JWT_ISSUER: "https://34.135.118.246:5173",
+        JWT_AUDIENCE: "JWT_APIs",
+        TELEGRAM_BOT_TOKEN: "",
+        TELEGRAM_BOT_WALLET_ADDRESS: "UQD8jAsk6KOyCRWlMsbTmdBE1kTx_rq0dYLP0OjORsWKFHSa",
+        IMAGE_ROOT: "",
+        CLIENT_URL: "https://34.135.118.246:5173",
+        ENCRYPT_SECRET_KEY: "'usage you weird blood reject gift spawn food liberty'",
+      },
+      cwd: './server/builtIn/recruiter-api',
+    },
+  ],
+};

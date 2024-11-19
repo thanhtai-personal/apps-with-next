@@ -9,19 +9,18 @@
     "docs": "typedoc --out docs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "peerDependencies": {
-    "@core-ui/react-core": "workspace:*",
-    "@core-ui/react-context": "workspace:*",
+  "dependencies": {
+    "@core-ui/react-core": "workspace:^",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@core-config/eslint-plugin": "workspace:*",
-    "@core-config/release": "workspace:*",
-    "@core-config/tsconfig": "workspace:*",
-    "@core-config/typedoc": "workspace:*",
-    "@core-ui/multilanguage": "workspace:*",
-    "@core-utils/utils-helpers": "workspace:*",
+    "@core-config/eslint-plugin": "workspace:^",
+    "@core-config/release": "workspace:^",
+    "@core-config/tsconfig": "workspace:^",
+    "@core-config/typedoc": "workspace:^",
+    "@core-ui/multilanguage": "workspace:^",
+    "@core-utils/utils-helpers": "workspace:^",
     "typescript": "^5.3.2"
   }
 }

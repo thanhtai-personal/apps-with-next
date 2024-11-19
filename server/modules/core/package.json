@@ -1,0 +1,30 @@
+{
+  "name": "@core-modules/core",
+  "version": "0.0.0",
+  "private": false,
+  "main": "./dist/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc && tsc-alias",
+    "docs": "typedoc --out docs --entryPoints src",
+    "release:patch": "pnpm i && pnpm build && pnpm run docs && npm version patch && npm publish"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@core-config/eslint-plugin": "workspace:^",
+    "@core-config/tsconfig": "workspace:^",
+    "@types/assert": "^1.5.10",
+    "@types/node": "^20.11.24",
+    "tsc-alias": "^1.8.8",
+    "typedoc": "^0.25.11",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "class-validator": "^0.14.1",
+    "typedoc": "^0.25.11",
+    "@core-ui/common-types": "workspace:^",
+    "@core-api/nest-typeorm-postgres": "workspace:^"
+  }
+}

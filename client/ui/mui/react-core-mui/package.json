@@ -14,16 +14,6 @@
     "preview": "vite preview",
     "release": "pnpm i && pnpm build && npm version patch && npm publish"
   },
-  "exports": {
-    ".": "./dist/index.js",
-    "./clsx": "./dist/base/clsx.js",
-    "./date": "./dist/base/date.js",
-    "./lab": "./dist/base/lab.js",
-    "./materials": "./dist/base/materials.js",
-    "./moment": "./dist/base/moment.js",
-    "./style": "./dist/base/style.js",
-    "./icons": "./dist/base/icons.js"
-  },
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -48,15 +38,7 @@
     "tslib": "^2.6.2",
     "typescript": "^5.2.2"
   },
-  "workspaces": [
-    "@core-api/*",
-    "@core-ui/*",
-    "@core-utils/*",
-    "@core-sdk/*",
-    "@core-config/*"
-  ],
   "dependencies": {
-    "@core-ui/react-context": "workspace:^",
     "@core-ui/react-mobx-state": "workspace:^",
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",

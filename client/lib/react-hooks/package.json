@@ -14,23 +14,16 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
-  "workspaces": [
-    "@core-api/*",
-    "@core-ui/*",
-    "@core-utils/*",
-    "@core-sdk/*",
-    "@core-config/*"
-  ],
   "dependencies": {
     "react-device-detect": "^2.2.3"
   },
   "devDependencies": {
     "@types/node": "^20.11.24",
-    "@core-config/eslint-plugin": "workspace:*",
-    "@core-config/release": "workspace:*",
-    "@core-config/tsconfig": "workspace:*",
-    "@core-config/typedoc": "workspace:*",
-    "@core-utils/utils-helpers": "workspace:*",
+    "@core-config/eslint-plugin": "workspace:^",
+    "@core-config/release": "workspace:^",
+    "@core-config/tsconfig": "workspace:^",
+    "@core-config/typedoc": "workspace:^",
+    "@core-utils/utils-helpers": "workspace:^",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@typescript-eslint/eslint-plugin": "^7.2.0",

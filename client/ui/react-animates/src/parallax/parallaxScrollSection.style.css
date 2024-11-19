@@ -1,0 +1,90 @@
+.parallax-wrapper {
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.hide-scrollbar {
+  scrollbar-width: none !important;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  width: none;
+}
+
+.background {
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex: 1 0 auto;
+  position: relative;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  transform: translateZ(-1px) scale(2);
+}
+
+.title {
+  position: absolute;
+  margin: 0;
+  top: calc(50% - 50px);
+  width: 100%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  height: 100px;
+  color: white;
+  font-size: 5rem;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.season-desc {
+  z-index: 1;
+  position: relative;
+  background: #282E34;
+  color: white;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  line-height: 2em;
+  padding: 3rem;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+}
+.season-desc .desc-wrapper {
+  margin: auto;
+  box-sizing: border-box;
+}
+.season-desc .season--title {
+  text-align: center;
+  font-size: 4rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.season-desc .season--about {
+  margin-top: 50px;
+  padding: 0;
+}
+
+@media (max-width: 998px) and (orientation: portrait) {
+  .season-desc {
+    padding: 1.5rem 20px;
+    font-size: 1rem;
+    height: unset;
+    min-height: 100vh;
+  }
+  .season-desc .season-title {
+    font-size: 2.5rem;
+    margin: 20px 0;
+    letter-spacing: unset;
+  }
+  .season-desc .season-about {
+    margin-top: 20px;
+  }
+}

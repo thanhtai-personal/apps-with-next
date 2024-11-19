@@ -1,4 +1,5 @@
 export * from "./Flex"
+export * from "./ResponsiveFlex4Column"
 export * from "./Text"
 export * from "./TableWrapper"
 export * from "./TableWrapper/TableFooter"

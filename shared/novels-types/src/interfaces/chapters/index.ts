@@ -1,0 +1,5 @@
+export * from "./IChapter"
+export * from "./IChapterCreation"
+export * from "./IChapterUpdating"
+export * from "./IChapterResponse"
+export * from "./IChapterFilter"

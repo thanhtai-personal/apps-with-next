@@ -40,7 +40,7 @@
 //         <div id="smooth-content">
 //           <header className="header">
 //             <h2 className="title">GSAP ScrollSmoother in React</h2>
-//             <button className="button" onClick={scrollTo}>
+//             <button className="gsap-button button" onClick={scrollTo}>
 //               Jump to C
 //             </button>
 //           </header>

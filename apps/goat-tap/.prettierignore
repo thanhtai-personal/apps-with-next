@@ -1,6 +1,0 @@
-# Ignore artifacts:
-build
-dist
-
-**/.git
-**/node_modules

@@ -1,2 +1,6 @@
 export * from "./PolygonMask"
+export * from "./BubbleMask"
 export * from "./Parallax"
+export * from "./ColoringMask"
+export * from "./FireWorkMask"
+export * from "./HexagonMask"

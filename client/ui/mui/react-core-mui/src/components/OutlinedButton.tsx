@@ -21,7 +21,7 @@ export const OutlinedButton = ({
 
   return (
     <ButtonBase
-      className={`${styles.button} ${disabled ? 'disabled' : ''}`}
+      className={`outlined-button ${styles.button} ${disabled ? 'disabled' : ''}`}
       style={{
         padding: '.5rem',
         border: 'solid 1px',

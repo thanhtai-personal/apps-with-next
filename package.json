@@ -16,6 +16,10 @@
     "build": "turbo build",
     "build:dev": "pnpm run clean && pnpm install && turbo build",
     "dev": "turbo dev",
+    "novels:client:build": "turbo novels:client:build",
+    "novels:server:build": "turbo novels:server:build",
+    "novels:client": "turbo novels:client",
+    "novels:server": "turbo novels:server",
     "lint": "turbo lint",
     "release:all": "turbo release"
   },
@@ -28,13 +32,6 @@
     "typedoc": "^0.25.11",
     "fs-extra": "^11.2.0"
   },
-  "workspaces": [
-    "@core-api/*",
-    "@core-ui/*",
-    "@core-utils/*",
-    "@core-sdk/*",
-    "@core-config/*"
-  ],
   "dependencies": {
     "turbo": "^1.13.2"
   },

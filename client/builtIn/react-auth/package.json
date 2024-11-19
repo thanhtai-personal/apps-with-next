@@ -1,45 +1,45 @@
 {
-  "name": "@core-ui/auth",
+  "name": "@core-logic-hooks/react-auth",
+  "private": false,
   "version": "0.0.0",
+  "type": "module",
   "main": "./dist/index.js",
   "files": [
     "dist"
   ],
-  "type": "module",
-  "license": "MIT",
   "scripts": {
     "build": "tsc --build",
     "docs": "typedoc --out docs",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "preview": "vite preview",
     "release": "pnpm i && pnpm build && npm version patch && npm publish"
-  },
-  "peerDependencies": {
-    "react": "^18.2.0",
-    "react-oidc-context": "3.0.0-beta.0",
-    "zustand": "^4.4.7"
   },
   "devDependencies": {
     "@core-config/eslint-plugin": "workspace:^",
     "@core-config/release": "workspace:^",
     "@core-config/tsconfig": "workspace:^",
     "@core-config/typedoc": "workspace:^",
-    "@types/react-dom": "18.2.8",
-    "@types/react": "^18.2.43",
-    "oidc-client-ts": "^3.0.0-rc.0",
-    "react-oidc-context": "3.0.0-beta.0",
-    "semantic-release": "^23.0.2",
-    "typedoc": "^0.25.11",
-    "typescript": "^5.3.3",
-    "zustand": "^4.4.7"
+    "@types/node": "^20.11.24",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "tslib": "^2.6.2",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0"
   },
-  "workspaces": [
-    "@core-api/*",
-    "@core-ui/*",
-    "@core-utils/*",
-    "@core-sdk/*",
-    "@core-config/*"
-  ],
   "dependencies": {
-    "nanoid": "^5.0.4"
+    "@core-sdk/app-center": "workspace:^",
+    "@core-ui/common-types": "workspace:^",
+    "@core-ui/react-core": "workspace:^",
+    "@core-ui/react-mobx-state": "workspace:^",
+    "@core-ui/ums-types": "workspace:^",
+    "@core-utils/react-hooks": "workspace:^",
+    "@core-utils/utils-helpers": "workspace:^",
+    "@twa-dev/sdk": "^7.8.0",
+    "@twa-dev/types": "^7.8.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "universal-cookie": "^7.2.1"
   }
 }

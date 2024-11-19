@@ -1,30 +1,5 @@
 /* Typography */
 
-@font-face {
-  font-display: block;
-  font-family: Mori;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://gsap.com/fonts/Mori/PPMori-Regular.woff) format('woff');
-}
-
-@font-face {
-  font-display: block;
-  font-family: Mori;
-  font-style: normal;
-  font-weight: 600;
-  src: url(https://gsap.com/fonts/Mori/PPMori-SemiBold.woff) format('woff');
-}
-
-@font-face {
-  font-display: block;
-  font-family: Fraktion Mono;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://gsap.com/fonts/Fraktion/PPFraktionMono-Bold.woff)
-    format('woff');
-}
-
 :root {
   --color-shockingly-green: #0ae448;
   --color-just-black: #0e100f;
@@ -477,7 +452,7 @@ a:hover {
 }
 
 /* button:not('.box') { breaking for some reason in codepen? */
-button {
+.gsap-button {
   display: inline-block;
   outline: none;
   padding: 8px 14px;

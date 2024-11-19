@@ -13,8 +13,10 @@
     "release": "pnpm i && pnpm build && npm version patch && npm publish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "peerDependencies": {
-    "@core-utils/utils-helpers": "workspace:^"
+  "dependencies": {
+    "@core-utils/utils-helpers": "workspace:^",
+    "axios": "^1.6.5",
+    "urlcat": "^3.1.0"
   },
   "devDependencies": {
     "@core-config/eslint-plugin": "workspace:^",
@@ -24,16 +26,5 @@
     "@core-utils/utils-helpers": "workspace:^",
     "tslib": "^2.6.2",
     "typescript": "^5.3.2"
-  },
-  "workspaces": [
-    "@core-api/*",
-    "@core-ui/*",
-    "@core-utils/*",
-    "@core-sdk/*",
-    "@core-config/*"
-  ],
-  "dependencies": {
-    "axios": "^1.6.5",
-    "urlcat": "^3.1.0"
   }
 }

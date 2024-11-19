@@ -1,0 +1,27 @@
+{
+  "name": "@core-ui/ums-types",
+  "version": "0.0.0",
+  "main": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "type": "commonjs",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc --build",
+    "docs": "typedoc --out docs",
+    "release": "pnpm i && pnpm build && npm version patch && npm publish",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@core-utils/utils-helpers": "workspace:^"
+  },
+  "devDependencies": {
+    "@core-config/eslint-plugin": "workspace:^",
+    "@core-config/release": "workspace:^",
+    "@core-config/tsconfig": "workspace:^",
+    "@core-config/typedoc": "workspace:^",
+    "tslib": "^2.6.2",
+    "typescript": "^5.3.2"
+  }
+}

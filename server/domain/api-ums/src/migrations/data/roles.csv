@@ -1,0 +1,4 @@
+name,description,type
+"Super admin","Super admin","superadmin"
+"Admin","Admin","admin",
+"Guess","Guess","user"

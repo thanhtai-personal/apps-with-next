@@ -4,9 +4,11 @@ export interface IIntersectionObserverView {
   children: ReactNode;
   className?: string;
   id?: string;
+  isInfinite?: boolean;
+  stateCallback?: (isElementInView?: boolean) => void;
 }
 
-export const IntersectionObserverView = ({ children, className, id }: IIntersectionObserverView) => {
+export const IntersectionObserverView = ({ children, className, id, isInfinite = false, stateCallback }: IIntersectionObserverView) => {
   const [loaded, setLoaded] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -15,6 +17,12 @@ export const IntersectionObserverView = ({ children, className, id }: IIntersect
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           setLoaded(true);
+          stateCallback?.(true);
+        } else {
+          if (isInfinite) {
+            setLoaded(false);
+          }
+          stateCallback?.(false);
         }
       });
     });
