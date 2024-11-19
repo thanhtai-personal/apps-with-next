@@ -1,7 +1,9 @@
 import DocsPage from "@/SSRComponents/docs";
 
-export default function Docs() {
+const Docs: React.FC = () => {
   return (
     <DocsPage />
   );
 }
+
+export default Docs

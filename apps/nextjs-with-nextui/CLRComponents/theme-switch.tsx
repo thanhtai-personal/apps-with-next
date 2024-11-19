@@ -8,13 +8,15 @@ import clsx from "clsx";
 
 import { SunFilledIcon, MoonFilledIcon } from "@/assets/icons";
 import { THEME } from "@/config/themes";
+import { observer } from "@core-utils/react-mobx-state";
+import { useEffect } from "react";
 
 export interface ThemeSwitchProps {
   className?: string;
   classNames?: SwitchProps["classNames"];
 }
 
-export const ThemeSwitch: React.FC<ThemeSwitchProps> = ({
+export const ThemeSwitch: React.FC<ThemeSwitchProps> = observer(({
   className,
   classNames,
 }) => {
@@ -78,4 +80,4 @@ export const ThemeSwitch: React.FC<ThemeSwitchProps> = ({
       </div>
     </Component>
   );
-};
+});

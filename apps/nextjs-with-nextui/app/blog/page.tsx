@@ -1,7 +1,9 @@
 import BlogPage from "@/SSRComponents/blog";
 
-export default function Blog() {
+const Blog: React.FC = () => {
   return (
     <BlogPage />
   );
 }
+
+export default Blog

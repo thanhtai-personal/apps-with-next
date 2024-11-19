@@ -1,7 +1,9 @@
 import AboutPage from "@/SSRComponents/about"
 
-export default function About() {
+const About: React.FC = () => {
   return (
     <AboutPage />
   );
 }
+
+export default About

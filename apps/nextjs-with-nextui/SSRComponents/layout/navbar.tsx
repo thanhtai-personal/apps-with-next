@@ -18,15 +18,16 @@ import clsx from "clsx";
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/CLRComponents/theme-switch";
 import {
-  TwitterIcon,
   GithubIcon,
-  DiscordIcon,
   HeartFilledIcon,
   SearchIcon,
   Logo,
 } from "@/assets/icons";
+import { observer } from "@core-utils/react-mobx-state";
+import { useAppStore } from "@/hooks";
 
 export const Navbar: React.FC = () => {
+
   const searchInput = (
     <Input
       aria-label="Search"
@@ -80,12 +81,6 @@ export const Navbar: React.FC = () => {
         justify="end"
       >
         <NavbarItem className="hidden sm:flex gap-2">
-          <Link isExternal aria-label="Twitter" href={siteConfig.links.twitter}>
-            <TwitterIcon className="text-default-500" />
-          </Link>
-          <Link isExternal aria-label="Discord" href={siteConfig.links.discord}>
-            <DiscordIcon className="text-default-500" />
-          </Link>
           <Link isExternal aria-label="Github" href={siteConfig.links.github}>
             <GithubIcon className="text-default-500" />
           </Link>

@@ -1,4 +1,5 @@
 "use client";
+
 import { useEffect } from "react";
 
 export interface IErrorProps {
@@ -10,6 +11,7 @@ const Error: React.FC<IErrorProps> = ({
   error,
   reset,
 }: IErrorProps) => {
+  
   useEffect(() => {
     // Log the error to an error reporting service
     /* eslint-disable no-console */

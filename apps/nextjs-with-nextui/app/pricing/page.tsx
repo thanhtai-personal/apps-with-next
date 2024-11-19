@@ -1,7 +1,9 @@
 import PricingPage from "@/SSRComponents/pricing";
 
-export default function Pricing() {
+const Pricing: React.FC = () => {
   return (
     <PricingPage />
   );
 }
+
+export default Pricing

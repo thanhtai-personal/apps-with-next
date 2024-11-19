@@ -1,7 +1,9 @@
 import { HomePage } from "@/SSRComponents/home";
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
     <HomePage />
   );
 }
+
+export default Home
