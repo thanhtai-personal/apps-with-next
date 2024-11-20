@@ -7,7 +7,7 @@ export const Counter: React.FC = observer(() => {
   const { counterStore } = useAppStore();
   return (
     <div>
-      <h2>Counter testing ${counterStore.count}</h2>
+      <h2 className="text-blue-400">Counter testing ${counterStore.count}</h2>
       <Button radius="full" onPress={() => counterStore.count += 1}>
         Count is {counterStore.count}
       </Button>
