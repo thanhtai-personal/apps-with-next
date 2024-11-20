@@ -1,14 +1,17 @@
 "use client";
 
+import { ReactNode } from "react";
 import { createStore } from "@core-utils/react-mobx-state";
 import { UIStore } from "./UIStore";
-import { ReactNode } from "react";
+import { CountingStore } from "./CountingStore";
 
 export class AppStore {
   public uiStore: UIStore;
+  public counterStore: CountingStore;
 
   public constructor() {
     this.uiStore = new UIStore();
+    this.counterStore = new CountingStore();
   }
 }
 

@@ -6,6 +6,7 @@ import { Code } from "@core-ui/nextui-core/dist/base/code";
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/SSRComponents/layout/primitives";
 import { GithubIcon } from "@/assets/icons";
+import { Counter } from "@/CLRComponents/counter";
 
 export interface IHomeProps { }
 
@@ -24,6 +25,8 @@ export const HomePage: React.FC<IHomeProps> = ({}) => {
           Beautiful, fast and modern React UI library.
         </div>
       </div>
+
+      <Counter />
 
       <div className="flex gap-3">
         <Link
